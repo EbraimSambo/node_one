@@ -20,4 +20,12 @@ export class DatabaseMemory{
     list(){
        return this.#videos.values()
     }
+
+    random(){
+        return this.#videos.values()
+     }
 }
+
+
+
+// code na maquina
