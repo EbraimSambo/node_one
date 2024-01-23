@@ -16,29 +16,28 @@ const server = fastify()
 const database = new DatabaseMemory()
 
 server.get('/', ()=>{
-    return "Ola Fastify"
+    return "Ola sAMBO"
 })
-server.get('/vedeos', ()=>{
+server.get('/videos', ()=>{
     return "Ola Fastify"
 })
 
-server.post('/vedeos', (request, reply)=>{
+server.post('/videos', (request, reply)=>{
+    const body = request.body
     database.create({
         title: "Meu LOVE",
         desc: "Ebraim Sambo",
         duraction: 122
     })
 
-    console.log(database.list())
+    console.log(body)
 
     return reply.status(201).send()
 })
 
-server.get('/name/:name', (name)=>{
-    return "Ola " .name
-})
 
-server.put('/vedeos/:id', ()=>{
+
+server.put('/videos/:id', ()=>{
     return "Ola Fastify"
 })
 

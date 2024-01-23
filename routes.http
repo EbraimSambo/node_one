@@ -1,1 +1,8 @@
-POST https://bug-free-engine-45qjj5gv4j52qxwj-3333.app.github.dev/videos
+POST http://localhost:3333/videos
+
+Content-Type: application/json
+
+
+{
+   " title": "Ebraim SAMBO"
+}
